@@ -74,7 +74,7 @@ document.querySelector('#statement-save').addEventListener('click', async () => 
   button.disabled = true;
   try {
     const artwork = new Image();
-    artwork.src = 'media/gtavi-bitcoin-rewards.png';
+    artwork.src = 'media/gtavi-bitcoin-rewards.webp';
     await artwork.decode();
     const canvas = document.createElement('canvas');
     canvas.width = 1200;
