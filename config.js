@@ -1,7 +1,7 @@
 // Edit these values in GitHub, then commit to main to update the website.
 const tokenConfig = {
-  contractAddress: '8MN3r9YWxnYPCJqZe8W42xRkBPxnCgw7ZkPCeUnZpump',
-  chartUrl: 'https://dexscreener.com/solana/H4rQVUMb9vTK4JkSNMzhKjTsXoMHbgifJmvDc4RW8WFq'
+  contractAddress: '3ZFxNiy51QpUMc9TDpnU7VVudB1bo6X6uiEzyNcWpump',
+  chartUrl: 'https://dexscreener.com/solana/3ZFxNiy51QpUMc9TDpnU7VVudB1bo6X6uiEzyNcWpump'
 };
 
 document.querySelector('#address').textContent = tokenConfig.contractAddress;
