@@ -60,3 +60,25 @@ tickerToggle.addEventListener('click', () => {
   tickerToggle.textContent = paused ? '▶' : 'Ⅱ';
   tickerToggle.setAttribute('aria-label', paused ? 'Play scrolling ticker' : 'Pause scrolling ticker');
 });
+
+document.querySelectorAll('.coin-flip').forEach((button) => {
+  button.addEventListener('click', () => {
+    const flipped = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(flipped));
+    button.setAttribute('aria-label', flipped ? 'Show Lucia back view' : 'Show Lucia front view');
+    button.querySelector('.coin-face-initial').setAttribute('aria-hidden', String(flipped));
+    button.querySelector('.coin-face-reverse').setAttribute('aria-hidden', String(!flipped));
+  });
+});
+document.querySelectorAll('.coin-copy').forEach((button) => {
+  button.addEventListener('click', async () => {
+    const status = button.closest('.linked-card-body').querySelector('.coin-copy-status');
+    const address = document.getElementById(button.dataset.addressId).textContent.trim();
+    try {
+      await navigator.clipboard.writeText(address);
+      status.textContent = 'Contract address copied.';
+    } catch {
+      status.textContent = 'Select and copy the contract address above.';
+    }
+  });
+});
