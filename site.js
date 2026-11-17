@@ -65,7 +65,7 @@ document.querySelectorAll('.coin-flip').forEach((button) => {
   button.addEventListener('click', () => {
     const flipped = button.getAttribute('aria-pressed') !== 'true';
     button.setAttribute('aria-pressed', String(flipped));
-    button.setAttribute('aria-label', flipped ? 'Show Lucia back view' : 'Show Lucia front view');
+    button.setAttribute('aria-label', 'Show ' + button.dataset.character + (flipped ? ' back view' : ' front view'));
     button.querySelector('.coin-face-initial').setAttribute('aria-hidden', String(flipped));
     button.querySelector('.coin-face-reverse').setAttribute('aria-hidden', String(!flipped));
   });

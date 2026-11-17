@@ -153,7 +153,7 @@
   <p class="linked-intro">Two characters. Their own coins. Explore the crew.</p>
   <div class="linked-grid">
 <article class="linked-card linked-lucia" aria-labelledby="lucia-title">
-<button class="coin-flip" type="button" aria-label="Show Lucia front view" aria-pressed="false" aria-describedby="lucia-hint">
+<button class="coin-flip" data-character="Lucia" type="button" aria-label="Show Lucia front view" aria-pressed="false" aria-describedby="lucia-hint">
     <span class="coin-flip-inner">
       <span class="coin-face coin-face-initial"><img src="media/lucia-back.webp" alt="Lucia back view in a neon sunset" width="1122" height="1402" loading="lazy"></span>
       <span class="coin-face coin-face-reverse" aria-hidden="true"><img src="media/lucia-front.webp" alt="Lucia front view in a neon sunset" width="1122" height="1402" loading="lazy"></span>
@@ -166,8 +166,14 @@
   <div class="actions"><a class="btn primary" href="https://pump.fun/coin/4GWLWDXUcmgQaQn1WJNEWQrA99QfWKZfMnQcc1NDpump" target="_blank" rel="noopener noreferrer">View $Lucia on Pump.fun ↗</a><button class="btn ghost coin-copy" type="button" data-address-id="lucia-address">Copy CA</button></div>
   <p class="coin-copy-status" role="status"></p></div></article>
 <article class="linked-card linked-bouncer" aria-labelledby="bouncer-title">
-<div class="coin-static"><img src="media/bouncer.webp" alt="Bouncer with green hair and a baseball bat beside a green Jeep" width="1122" height="1402" loading="lazy"></div>
-  <p class="coin-hint">Meet Bouncer.</p>
+<button class="coin-flip" data-character="Bouncer" type="button" aria-label="Show Bouncer front view" aria-pressed="false" aria-describedby="bouncer-hint">
+    <span class="coin-flip-inner">
+      <span class="coin-face coin-face-initial"><img src="media/bouncer-back.webp" alt="Bouncer back view with green jacket and baseball bat" width="873" height="724" loading="lazy"></span>
+      <span class="coin-face coin-face-reverse" aria-hidden="true"><img src="media/bouncer.webp" alt="Bouncer front view with green hair and baseball bat" width="1122" height="1402" loading="lazy"></span>
+    </span>
+    <span class="coin-flip-badge" aria-hidden="true">↻ Tap to flip</span>
+  </button>
+  <p id="bouncer-hint" class="coin-hint">Click or tap the photo to see the other side.</p>
 <div class="linked-card-body"><h3 id="bouncer-title">$Bouncer</h3>
   <p class="coin-contract-label">CONTRACT ADDRESS</p><code id="bouncer-address">3kFd4wz6NMPpDNEqh9ngnNrj54KDSYogAe7b7b9Dpump</code>
   <div class="actions"><a class="btn primary" href="https://pump.fun/coin/3kFd4wz6NMPpDNEqh9ngnNrj54KDSYogAe7b7b9Dpump" target="_blank" rel="noopener noreferrer">View $Bouncer on Pump.fun ↗</a><button class="btn ghost coin-copy" type="button" data-address-id="bouncer-address">Copy CA</button></div>
